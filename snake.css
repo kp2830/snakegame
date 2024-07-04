@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background: url("image/snake1.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#board {
+  background: linear-gradient(rgb(146, 163, 146), rgb(181, 181, 107));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(darkgreen, green);
+  border: 2px solid white;
+  border-radius: 12px;
+  transform: scale(1.08);
+}
+.snake {
+  background: linear-gradient(green, lightgreen);
+  border: 0.25vmin solid white;
+  border-radius: 12px;
+}
+.food {
+  background: linear-gradient(red, yellow);
+  border: 0.25vmin solid black;
+  border-radius: 40px;
+}
+#scorebox {
+  border: 5px solid black;
+  border-radius: 14px;
+  position: absolute;
+  top: 20px;
+  right: 200px;
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(rgb(229, 223, 162), rgb(214, 248, 65));
+}
+.bomb {
+  background-color: black;
+  border: 0.25vmin solid rgb(36, 30, 30);
+  border-radius: 12px;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(rgb(29, 145, 71), rgb(186, 208, 14));
+  color: linear-gradient(green, yellow);
+  border: 3px solid black;
+  border-radius: 7px;
+}
+.para {
+  width: 130px;
+  padding: auto;
+  border: 2px 3px white;
+  margin-top: 00px;
+  margin-left: 00px;
+}
+.container {
+  background: linear-gradient(rgb(78, 136, 7), rgb(107, 181, 118));
+  width: 60vmin;
+  height: 60vmin;
+  border: 2px solid rgb(221, 211, 211);
+  margin-bottom: 00px;
+  margin-right: 1100px;
+  position: absolute;
+}
+.para {
+  font-size: 20 px;
+  display: inline-block;
+  margin-left: 20px;
+}
+li {
+  font-size: 33px;
+  display: inline-block;
+  text-align: left;
+  list-style-type: style bullet;
+  text-decoration: solid;
+}
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+h6 {
+  display: inline;
+  font-size: 33px;
+}
